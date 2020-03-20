@@ -23,6 +23,6 @@ class EmployeeController {
 
 	@GetMapping("/employees")
 	public ResponseEntity<List<String>> getEmployees() {
-		return ResponseEntity.status(HttpStatus.OK).body(List.of("pascal", "thomas"));
+		return ResponseEntity.status(HttpStatus.CREATED).body(List.of("Pascal", "Thomas"));
 	}
 }
